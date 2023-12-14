@@ -37,7 +37,7 @@
             {
                 DementiaHealth.color = OriginalDementiaColor;
             }
-            
+
             void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.CompareTag("Player")) ;
@@ -49,8 +49,8 @@
                 }
 
             }
-         
-        
-        
-        }
-    }
+         }
+        } 
+    
+   }
+    
