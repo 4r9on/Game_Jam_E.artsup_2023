@@ -7,6 +7,8 @@ TagManager:
   - CinemachineTarget
   - Object
   - aaaaa
+  - Fire
+  - Door
   layers:
   - Default
   - TransparentFX
