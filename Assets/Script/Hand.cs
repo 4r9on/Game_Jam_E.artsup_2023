@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Hand : MonoBehaviour
 {
-    //public Item item;
+    //
 
     public Transform playerCam;
     public Transform player;
@@ -23,7 +23,7 @@ public class Hand : MonoBehaviour
     {
         float dist = Vector3.Distance(gameObject.transform.position, player.position);
     
-        if(dist <= 1.9f)
+        if(dist <= 1.7f)
         {
             hasPlayer = true;
         }
@@ -81,35 +81,4 @@ public class Hand : MonoBehaviour
             touched = true;
         }
     }
-    /*public void OnHand()
-    {
-        if (Input.GetMouseButtonDown(0) && (rightHand = false) && (hasPlayer = true))
-        {
-            GetComponent<Rigidbody>().isKinematic = true;
-            transform.parent = playerCam;
-            beingCarried = true;
-            rightHand = true;
-        }
-
-        if(beingCarried)
-        {
-            if(touched)
-            {
-                GetComponent<Rigidbody>().isKinematic = false;
-                transform.parent = null;
-                beingCarried = false;
-                touched = false;
-                rightHand = false;
-            }
-
-            if (Input.GetKeyDown(KeyCode.E)){
-                GetComponent<Rigidbody>().isKinematic = false; 
-                transform.parent = null;
-                beingCarried = false;
-                rightHand = false;
-            }
-        }
-    }*/
-
-
 }
