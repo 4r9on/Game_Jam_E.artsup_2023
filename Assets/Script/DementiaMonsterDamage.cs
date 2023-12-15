@@ -25,12 +25,24 @@ public class DementiaMonsterDamage : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        // dementiaTimer += Time.deltaTime;
-    }
-
-    private void OnCollisionEnter(Collision collision)
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            if (Health <= 2)
+            {
+                Heart1.SetActive(false);
+                Health--;
+            }
+            else if (Health <= 0)
+            {
+                Heart2.SetActive(false);
+                SceneManager.LoadScene("MainMenu");
+            }
+            // dementiaTimer += Time.deltaTime;
+        }
+   
+    /*private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player")&& Input.GetKeyDown(KeyCode.K))
         {
             if (Health <= 2)
             {
@@ -45,6 +57,6 @@ public class DementiaMonsterDamage : MonoBehaviour
 
             //collision.gameObject.GetComponent<DementiaBar>().currentDemence += dementiaAttack;
             //dementiaTimer = 0f;
-        }
+        }*/
     }
 }
