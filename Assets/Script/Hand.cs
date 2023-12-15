@@ -19,7 +19,7 @@ public class Hand : MonoBehaviour
 
     private void Update()
     {
-        float dist = Vector3.Distance(gameObject.transform.position, playerCam.position);
+        float dist = Vector3.Distance(gameObject.transform.position, player.position);
     
         if(dist <= 1.7f)
         {
@@ -34,7 +34,7 @@ public class Hand : MonoBehaviour
         {
             Debug.Log("aaaa");
             GetComponent<Rigidbody>().isKinematic = true;
-            transform.parent = player;
+            transform.parent = playerCam;
             beingCarried = true;
         }
 
