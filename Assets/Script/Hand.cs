@@ -9,8 +9,6 @@ public class Hand : MonoBehaviour
     public Transform playerCam;
     public Transform player;
 
-    public bool rightHand = false;
-    public bool leftHand = false;
     public float throwForce = 10;
 
     public bool hasPlayer = false;
@@ -32,15 +30,7 @@ public class Hand : MonoBehaviour
             hasPlayer = false;
         }
 
-        if (hasPlayer /*&& !rightHand */&& Input.GetMouseButton(1))
-        {
-            Debug.Log("aaaa");
-            GetComponent<Rigidbody>().isKinematic = true;
-            transform.parent = playerCam;
-            beingCarried = true;
-        }
-
-        if (hasPlayer /*&& !leftHand */&& Input.GetMouseButton(0))
+        if (hasPlayer && Input.GetMouseButton(0))
         {
             Debug.Log("aaaa");
             GetComponent<Rigidbody>().isKinematic = true;
@@ -63,7 +53,6 @@ public class Hand : MonoBehaviour
                 GetComponent<Rigidbody>().isKinematic = false;
                 transform.parent = null;
                 beingCarried = false;
-                rightHand = false;
             }
             else if (Input.GetKeyDown(KeyCode.E))
             {
