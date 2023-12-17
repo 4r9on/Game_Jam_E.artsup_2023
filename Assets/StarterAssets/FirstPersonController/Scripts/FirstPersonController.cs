@@ -188,7 +188,7 @@ namespace StarterAssets
 
 			// note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
 			// if there is a move input rotate playerCam when the playerCam is moving
-			if (_input.	 != Vector2.zero)
+			if (_input.move != Vector2.zero)
 			{
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
