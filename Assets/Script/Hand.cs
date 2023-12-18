@@ -30,7 +30,7 @@ public class Hand : MonoBehaviour
             hasPlayer = false;
         }
 
-        if (hasPlayer && Input.GetMouseButton(0))
+        if (hasPlayer && Input.GetMouseButtonDown(0))
         {
             Debug.Log("aaaa");
             GetComponent<Rigidbody>().isKinematic = true;
