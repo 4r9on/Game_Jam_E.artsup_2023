@@ -8,7 +8,6 @@ public class Hand : MonoBehaviour
 
     public Transform playerCam;
     public Transform player;
-    //public Transform pos;
 
     //public float throwForce = 10;
 
@@ -36,7 +35,7 @@ public class Hand : MonoBehaviour
             hasPlayer = false;
         }
 
-        if (hasPlayer && Input.GetMouseButtonDown(0))
+        if (hasPlayer && Input.GetMouseButton(0))
         {
             GetComponent<Rigidbody>().isKinematic = true;
             transform.parent = playerCam;
