@@ -26,7 +26,7 @@ public class Hand : MonoBehaviour
 
         float dist = Vector3.Distance(gameObject.transform.position, player.position);
     
-        if(dist <= 1.0f)
+        if(dist <= 1.7f)
         {
             hasPlayer = true;
         }
@@ -35,7 +35,7 @@ public class Hand : MonoBehaviour
             hasPlayer = false;
         }
 
-        if (hasPlayer && Input.GetMouseButtonDown(0))
+        if (hasPlayer && Input.GetMouseButton(0))
         {
             GetComponent<Rigidbody>().isKinematic = true;
             transform.parent = playerCam;
@@ -46,7 +46,7 @@ public class Hand : MonoBehaviour
         {
             if (touched)
             {
-                GetComponent<Rigidbody>().isKinematic = false;
+                GetComponent<Rigidbody>().isKinematic = true;
                 transform.parent = null;
                 beingCarried = false;
                 touched = false;
