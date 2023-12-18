@@ -7,11 +7,14 @@ public class Interact : MonoBehaviour
 {
     public GameObject text;
 
+    public float timer;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             text.SetActive(true);
+
         }
     }
 
