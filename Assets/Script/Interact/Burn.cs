@@ -80,9 +80,6 @@ public class Burn : MonoBehaviour
             object5 = true;
             //Destroy(Object5.gameObject);
             burn++;
-        }
-
-        
+        }  
     }
-
 }

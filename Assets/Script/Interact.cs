@@ -5,13 +5,16 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
+    Burn fire;
+
     public GameObject text;
+    public GameObject col;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
-        {
-            text.SetActive(true);
+        {  
+            text.SetActive(true);    
         }
     }
 
@@ -20,6 +23,8 @@ public class Interact : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             text.SetActive(false);
-        }
+
+            col.SetActive(false);
+        } 
     }
 }
