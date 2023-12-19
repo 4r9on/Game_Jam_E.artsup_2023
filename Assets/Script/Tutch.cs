@@ -13,6 +13,12 @@ public class Tutch : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("pppppppp");
+
+        }
+
+        /*if (other.CompareTag("Player"))
+        {
             if (fire.burn == 0)
             {
                 Debug.Log("pppppppp");
@@ -22,7 +28,7 @@ public class Tutch : MonoBehaviour
             {
                 //text.SetActive(false);
             }
-        }
-        
+        }*/
+
     }
 }
