@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/_MainMenu.unity
     guid: 39710f1e3273f934e873ab05f4473722
   - enabled: 1
-    path: Assets/Scenes/Play.unity
-    guid: 7ec3cb774773af6468aabf118889faed
+    path: Assets/Scenes/Play2.unity
+    guid: af1c3a79e664aab419e55e4a53fcd20c
   - enabled: 1
     path: Assets/Scenes/_Win.unity
     guid: ae568c08be6c0704cb6df0b8525a409d
+  - enabled: 1
+    path: Assets/Scenes/_Scream.unity
+    guid: 0ef3ebb69aa7398438191495a2e8bae3
   - enabled: 1
     path: Assets/Scenes/_Lose.unity
     guid: 4c9310be33c0f4947ade781adcc7b647

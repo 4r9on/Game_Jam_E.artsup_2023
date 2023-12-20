@@ -25,6 +25,8 @@ public class Burn : MonoBehaviour
 
     AIController controller;
 
+    NavMeshAgent agent;
+
     //public GameObject hasObject;
     //public GameObject notObject;
 
@@ -36,11 +38,11 @@ public class Burn : MonoBehaviour
         }
         if (burn == 3)
         {
-            controller.agent.speed = 3.5f;
+            agent.speed = 3.5f;
         }
         if (burn == 4)
         {
-            controller.agent.speed = 5.0f;
+            agent.speed = 5.0f;
         }
         if (burn == 5)
         {

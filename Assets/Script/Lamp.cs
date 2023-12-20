@@ -5,19 +5,25 @@ using UnityEngine;
 public class Lamp : MonoBehaviour
 {
     public GameObject Lampe;
-    public int lamp;
+    public float lamp;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R)) 
+        if (Input.GetKey(KeyCode.R)) 
         {       
             Lampe.SetActive(true);
+           /* lamp++;
+
+            if (lamp >= 50)
+            {
+                Lampe.SetActive(false);
+                lamp = 0;
+            }*/
         }
-        else
+        if (Input.GetKeyUp(KeyCode.R)) 
         {
             Lampe.SetActive(false);
         }
-
     }
 }

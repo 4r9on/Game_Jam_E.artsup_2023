@@ -15,8 +15,8 @@ public class Hand : MonoBehaviour
     public bool beingCarried = false;
     public bool touched = false;
 
-    public Material[] outline;
-    Renderer rend;
+    /*public Material[] outline;
+    Renderer rend;*/
 
 
     private void Start()
@@ -24,9 +24,9 @@ public class Hand : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
-        rend = GetComponent<Renderer>();
+        /*rend = GetComponent<Renderer>();
         rend.enabled = true;
-        rend.material = outline[0];
+        rend.material = outline[0];*/
     }
 
     private void Update()
@@ -37,7 +37,7 @@ public class Hand : MonoBehaviour
         if(dist <= 1.7f)
         {
             hasPlayer = true;
-            rend.material = outline[1];
+            //rend.material = outline[1];
             Debug.Log("kkkkkk");
         }
         else
@@ -45,7 +45,7 @@ public class Hand : MonoBehaviour
             hasPlayer = false;
         }
 
-        if (hasPlayer && Input.GetMouseButton(0))
+        if (hasPlayer && Input.GetMouseButtonDown(0))
         {
             GetComponent<Rigidbody>().isKinematic = true;
             transform.parent = playerCam;
@@ -56,7 +56,7 @@ public class Hand : MonoBehaviour
         {
             if (touched)
             {
-                GetComponent<Rigidbody>().isKinematic = true;
+                GetComponent<Rigidbody>().isKinematic = false;
                 transform.parent = null;
                 beingCarried = false;
                 touched = false;
