@@ -15,10 +15,18 @@ public class Hand : MonoBehaviour
     public bool beingCarried = false;
     public bool touched = false;
 
+    public Material[] outline;
+    Renderer rend;
+
+
     private void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
+        rend.material = outline[0];
     }
 
     private void Update()
@@ -29,6 +37,8 @@ public class Hand : MonoBehaviour
         if(dist <= 1.7f)
         {
             hasPlayer = true;
+            rend.material = outline[1];
+            Debug.Log("kkkkkk");
         }
         else
         {
