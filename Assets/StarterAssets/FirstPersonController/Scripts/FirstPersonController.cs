@@ -74,6 +74,7 @@ namespace StarterAssets
 
 		private const float _threshold = 0.01f;
 
+
 		private bool IsCurrentDeviceMouse
 		{
 			get
@@ -265,4 +266,6 @@ namespace StarterAssets
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
 		}
 	}
+
+
 }
