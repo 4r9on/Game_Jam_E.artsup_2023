@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -447,6 +447,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc3efd651ba40d64ea9f70bf80f862e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NameOfScene: 
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
 --- !u!114 &461560455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,7 +462,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18ffb7468f861444dae7ed7441d39ce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poursuite: {fileID: 0}
+  Target: {fileID: 1212991288}
+  detecDistance: 10
+  distance: 5
   waypoints:
   - {fileID: 1339840137}
   - {fileID: 1594737078}
@@ -472,9 +477,6 @@ MonoBehaviour:
   - {fileID: 1378318469}
   - {fileID: 569752831}
   - {fileID: 622917872}
-  Target: {fileID: 1212991288}
-  detecDistance: 10
-  distance: 5
 --- !u!135 &461560456
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -919,6 +921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Lampe: {fileID: 1727731249}
+  lamp: 0
 --- !u!4 &623577773
 Transform:
   m_ObjectHideFlags: 0
@@ -1206,7 +1209,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -1903,7 +1907,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.1
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 9e5c9f9f05197e2458f0d19ca9eadbb1, type: 2}
   m_BuildHeightMesh: 0
@@ -2166,6 +2170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 325054180}
+  col: {fileID: 0}
 --- !u!114 &1484589535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2179,6 +2184,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   burn: 0
+  Object1: {fileID: 0}
+  Object2: {fileID: 0}
+  Object3: {fileID: 0}
+  Object4: {fileID: 0}
+  Object5: {fileID: 0}
+  object1: 0
+  object2: 0
+  object3: 0
+  object4: 0
+  object5: 0
+  NameOfScene: 
 --- !u!1 &1594737077
 GameObject:
   m_ObjectHideFlags: 0

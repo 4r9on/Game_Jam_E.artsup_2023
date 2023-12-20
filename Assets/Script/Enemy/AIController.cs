@@ -13,7 +13,7 @@ public class AIController : MonoBehaviour
     public float detecDistance;
     public float distance;
 
-    NavMeshAgent agent;
+    public NavMeshAgent agent;
     public List<Transform> waypoints;
     int waypointIndex;
     Vector3 target;
@@ -31,7 +31,17 @@ public class AIController : MonoBehaviour
             IterateWaypointIndex();
             UpdateDestination();
         }
-           
+
+        /*if(fire.burn == 3)
+        {
+            agent.speed = 3.5f;
+        }
+
+        if (fire.burn == 4)
+        {
+            agent.speed = 5;
+        }*/
+
         Mouv();
 
     }
@@ -62,15 +72,6 @@ public class AIController : MonoBehaviour
             agent.SetDestination(agent.destination);
             agent.destination = Target.position;
         }
-        
-
-        /*if (fire.burn == 3)
-        {
-            agent.speed = 5;
-        }
-        else if (fire.burn == 4)
-        {
-            agent.speed = 7;
-        }*/
+         
     }
 }

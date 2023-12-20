@@ -1,5 +1,73 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &139043765728700398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9193148804517551457}
+  - component: {fileID: 3624293864004245281}
+  - component: {fileID: 9175783093664533701}
+  m_Layer: 0
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9193148804517551457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139043765728700398}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.000000014901161, w: 1}
+  m_LocalPosition: {x: 0.0001, y: -0.0073, z: 0.0002}
+  m_LocalScale: {x: 0.050378628, y: 0.050378628, z: 0.050378628}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 475930028316460508}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3624293864004245281
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139043765728700398}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.5716759, z: 1}
+  m_Center: {x: 0, y: 0.21416205, z: 0}
+--- !u!114 &9175783093664533701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139043765728700398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47c081752b50ba44989175b102dfa9a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  col: {fileID: 139043765728700398}
 --- !u!1 &995585214418706278
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,11 +81,10 @@ GameObject:
   - component: {fileID: 1644371361476476595}
   - component: {fileID: 6659551428403398651}
   - component: {fileID: 6960077290356799985}
-  - component: {fileID: 7188828303785413405}
-  - component: {fileID: 5720386039338809767}
+  - component: {fileID: 5753655177057134324}
   m_Layer: 0
   m_Name: 'statuette satanique '
-  m_TagString: Untagged
+  m_TagString: Object4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,11 +97,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995585214418706278}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.563, y: 1.62, z: 11.021}
+  m_LocalScale: {x: 19.849688, y: 19.849688, z: 19.849688}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 9193148804517551457}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3545753766037916281
@@ -136,7 +204,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7188828303785413405
+--- !u!114 &5753655177057134324
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,26 +213,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 995585214418706278}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 300bf0b7dd5554c45aba771f3f1538e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  burn: 0
-  monster: {fileID: 0}
---- !u!114 &5720386039338809767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995585214418706278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c1afe340adaa84db380439fe955cf7, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b87439667c161a4ea9010ca352fdc1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerCam: {fileID: 0}
   player: {fileID: 0}
-  throwForce: 10
   hasPlayer: 0
   beingCarried: 0
   touched: 0

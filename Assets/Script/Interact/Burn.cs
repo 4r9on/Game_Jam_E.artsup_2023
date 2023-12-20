@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 public class Burn : MonoBehaviour
@@ -20,53 +21,55 @@ public class Burn : MonoBehaviour
     public bool object5 = false;
 
     public string NameOfScene;
-    //public GameObject monster;
+    public GameObject monster;
 
+    AIController controller;
 
     private void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.F))
+        if (burn == 1)
         {
-            if (((object1 = true) && (object2 = true) && (object3 = true) && (object4 = true) && (object5 = true)))
-            {
-                Debug.Log("nnn");
-
-                SceneManager.LoadScene(NameOfScene);
-            }
-        }*/
-
-        if(burn == 5)
+            monster.SetActive(true);
+        }
+        /*if (burn == 3)
+        {
+            controller.agent.speed = 3.5f;
+        }
+        else if (burn == 4)
+        {
+            controller.agent.speed = 5.0f;
+        }
+        if (burn == 5)
         {
             Debug.Log("nnn");
             SceneManager.LoadScene(NameOfScene);
-
-        }
+        }*/
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Object1")
+        if (other.CompareTag("Object1"))
         {
             Object1.SetActive(false);
-            //object1 = true;
+            object1 = true;
             //Destroy(Object1.gameObject);
             burn++;
         }
-        if (collision.gameObject.CompareTag("Object2"))
+        if (other.CompareTag("Object2"))
         {
             Object2.SetActive(false);
-            //object2 = true;
+            object2 = true;
             // Destroy(Object2.gameObject);
             burn++;
         }
-        if (collision.gameObject.CompareTag("Object3"))
+        if (other.CompareTag("Object3"))
         {
             Object3.SetActive(false);
             object3 = true;
             //Destroy(Object3.gameObject);
             burn++;
         }
-        if (collision.gameObject.CompareTag("Object4"))
+        if (other.CompareTag("Object4"))
         {
             Object4.SetActive(false);
             object4 = true;
@@ -74,12 +77,12 @@ public class Burn : MonoBehaviour
             burn++;
 
         }
-        if (collision.gameObject.CompareTag("Object5"))
+        if (other.CompareTag("Object5"))
         {
             Object5.SetActive(false);
             object5 = true;
             //Destroy(Object5.gameObject);
             burn++;
-        }  
+        }
     }
 }
