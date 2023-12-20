@@ -22,7 +22,7 @@ namespace StarterAssets
 		public float SpeedChangeRate = 10.0f;
 
 		[Space(10)]
-		[Tooltip("The height the playerCam can jump")]
+		[Tooltip("The height the player can jump")]
 		public float JumpHeight = 1.2f;
 		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
 		public float Gravity = -15.0f;
@@ -54,7 +54,7 @@ namespace StarterAssets
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
-		// playerCam
+		// player
 		private float _speed;
 		private float _rotationVelocity;
 		private float _verticalVelocity;
@@ -146,7 +146,7 @@ namespace StarterAssets
 				// Update Cinemachine camera target pitch
 				CinemachineCameraTarget.transform.localRotation = Quaternion.Euler(_cinemachineTargetPitch, 0.0f, 0.0f);
 
-				// rotate the playerCam left and right
+				// rotate the player left and right
 				transform.Rotate(Vector3.up * _rotationVelocity);
 			}
 		}
@@ -187,14 +187,14 @@ namespace StarterAssets
 			Vector3 inputDirection = new Vector3(_input.move.x, 0.0f, _input.move.y).normalized;
 
 			// note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
-			// if there is a move input rotate playerCam when the playerCam is moving
+			// if there is a move input rotate player when the player is moving
 			if (_input.move != Vector2.zero)
 			{
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
 			}
 
-			// move the playerCam
+			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 		}
 
