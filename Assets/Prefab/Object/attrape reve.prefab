@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -5679608269920593213}
   - component: {fileID: -1991852888675892778}
   - component: {fileID: 4333809309122312073}
-  - component: {fileID: 2404286487469838314}
   m_Layer: 0
   m_Name: attrape reve
   m_TagString: Object3
@@ -159,20 +158,7 @@ MonoBehaviour:
   hasPlayer: 0
   beingCarried: 0
   touched: 0
---- !u!114 &2404286487469838314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2180775350274061663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47c081752b50ba44989175b102dfa9a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  col: {fileID: 0}
+  outline: []
 --- !u!1 &9012612791355335617
 GameObject:
   m_ObjectHideFlags: 0

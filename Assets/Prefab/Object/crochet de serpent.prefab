@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3761532730625487181}
   - component: {fileID: 1637926807332695052}
   - component: {fileID: 4995142267357428696}
-  - component: {fileID: 193430467067325614}
   m_Layer: 0
   m_Name: crochet de serpent
   m_TagString: Object5
@@ -155,20 +154,7 @@ MonoBehaviour:
   hasPlayer: 0
   beingCarried: 0
   touched: 0
---- !u!114 &193430467067325614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7695747112986836396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47c081752b50ba44989175b102dfa9a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  col: {fileID: 0}
+  outline: []
 --- !u!1 &8194060024797904376
 GameObject:
   m_ObjectHideFlags: 0
