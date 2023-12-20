@@ -25,17 +25,20 @@ public class Burn : MonoBehaviour
 
     AIController controller;
 
+    //public GameObject hasObject;
+    //public GameObject notObject;
+
     private void Update()
     {
         if (burn == 1)
         {
             monster.SetActive(true);
         }
-        /*if (burn == 3)
+        if (burn == 3)
         {
             controller.agent.speed = 3.5f;
         }
-        else if (burn == 4)
+        if (burn == 4)
         {
             controller.agent.speed = 5.0f;
         }
@@ -43,7 +46,7 @@ public class Burn : MonoBehaviour
         {
             Debug.Log("nnn");
             SceneManager.LoadScene(NameOfScene);
-        }*/
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -84,5 +87,27 @@ public class Burn : MonoBehaviour
             //Destroy(Object5.gameObject);
             burn++;
         }
+
+        /*if (other.CompareTag("Player"))
+        {
+            if ((object1 = true) || (object2 = true) || (object3 = true) || (object3 = true) || (object4 = true) || (object5 = true))
+            {
+                hasObject.SetActive(true);
+            }
+            else
+            {
+                hasObject.SetActive(false);
+            }
+
+            if ((object1 = false) || (object2 = false) || (object3 = false) || (object3 = false) || (object4 = false) || (object5 = false))
+            {
+                notObject.SetActive(true);
+            }
+            else
+            {
+                notObject.SetActive(false);
+            }
+        }*/
+
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Lamp : MonoBehaviour
 {
     public GameObject Lampe;
-    public bool lamp = false;
+    public int lamp;
 
     // Update is called once per frame
     void Update()
@@ -13,6 +13,10 @@ public class Lamp : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R)) 
         {       
             Lampe.SetActive(true);
+        }
+        else
+        {
+            Lampe.SetActive(false);
         }
 
     }
