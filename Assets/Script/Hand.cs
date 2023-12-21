@@ -69,7 +69,7 @@ public class Hand : MonoBehaviour
                 beingCarried = false;
             }*/
 
-            else if (Input.GetKeyDown(KeyCode.E))
+            else if (Input.GetMouseButtonUp(0))
             {
                 GetComponent <Rigidbody>().isKinematic = false;
                 transform.parent = null;
