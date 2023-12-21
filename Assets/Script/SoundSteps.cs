@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-/*public class SoundSteps : MonoBehaviour
-{
     public class footsteps : MonoBehaviour
     {
-        public AudioSource footstepSound, sprintSound;
-        public AudioClip wool, wood, grass;
+        public AudioSource footstepSound;
+        public AudioSource sprintSound;
+        /*public AudioSource wool, wood, grass;*/
 
-        private void OnCollisionEnter(Collision collision)
+        /* void OnCollisionEnter(Collision collision)
         {
            if (collision.gameObject.CompareTag("grass"))
-            {
+            {   
                 grass.Play();
             }
            if (collision.gameObject.CompareTag("wool"))
@@ -22,29 +21,29 @@ using UnityEngine;
             }
             if (collision.gameObject.CompareTag("wood"))
             {
-                wood.Play
+                wood.Play();
             }
-        }
+        }*/
 
         void Update()
         {
             
-            if (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
             {
                 if (Input.GetKey(KeyCode.LeftShift))
                 {
-                    footstepsSound.enabled = false;
+                    footstepSound.enabled = false;
                     sprintSound.enabled = true;
                 }
                 else
                 {
-                    footstepsSound.enabled = true;
+                    footstepSound.enabled = true;
                     sprintSound.enabled = false;
                 }
             }
             else
             {
-                footstepsSound.enabled = false;
+                footstepSound.enabled = false;
                 sprintSound.enabled = false;
             }
 
@@ -54,15 +53,3 @@ using UnityEngine;
 
 
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}*/

@@ -17,6 +17,10 @@ TagManager:
   - grass
   - wool
   - wood
+  - Door3
+  - Door2
+  - Door1
+  - Door4
   layers:
   - Default
   - TransparentFX

@@ -25,24 +25,34 @@ public class Burn : MonoBehaviour
 
     AIController controller;
 
-    NavMeshAgent agent;
+    public NavMeshAgent agent;
+
+    public AudioSource audioSource;
 
     //public GameObject hasObject;
     //public GameObject notObject;
+
+    private void Start()
+    {
+        
+    }
 
     private void Update()
     {
         if (burn == 1)
         {
+            audioSource.Play();
             monster.SetActive(true);
+            
+
         }
         if (burn == 3)
         {
-            agent.speed = 3.5f;
+            agent.speed = 4.5f;
         }
         if (burn == 4)
         {
-            agent.speed = 5.0f;
+            agent.speed = 6.0f;
         }
         if (burn == 5)
         {
