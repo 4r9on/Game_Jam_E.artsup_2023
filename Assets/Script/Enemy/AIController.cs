@@ -48,7 +48,7 @@ public class AIController : MonoBehaviour
 
     }
 
-    void UpdateDestination()
+    public void UpdateDestination()
     {
         target = waypoints[waypointIndex].position;
         agent.SetDestination(target);
@@ -77,6 +77,12 @@ public class AIController : MonoBehaviour
             agent.destination = Target.position;
         }
        
+
+    }
+
+
+    void truc()
+    {
 
     }
 }

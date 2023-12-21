@@ -6,6 +6,8 @@ using UnityEngine.Video;
 
 public class Video : MonoBehaviour
 {
+    public string NameOfScene;
+
     private void Start()
     {
         StartCoroutine(Scream());
@@ -14,7 +16,12 @@ public class Video : MonoBehaviour
     IEnumerator Scream()
     {
         yield return new WaitForSecondsRealtime(9f);
-        SceneManager.LoadScene("_Lose");
+        SwitchScene();
 
+    }
+
+    public void SwitchScene()
+    {
+        SceneManager.LoadScene(NameOfScene);
     }
 }

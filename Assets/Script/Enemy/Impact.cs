@@ -12,7 +12,6 @@ public class Impact : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
 
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -21,6 +20,7 @@ public class Impact : MonoBehaviour
             if (Life == 1)
             {
                 Heart1.SetActive(false);
+                
             }
             if (Life == 0)
             {
@@ -28,5 +28,10 @@ public class Impact : MonoBehaviour
             }
 
         }
+    }
+
+    IEnumerator Big()
+    {
+        yield return new WaitForSecondsRealtime(20f);
     }
 }

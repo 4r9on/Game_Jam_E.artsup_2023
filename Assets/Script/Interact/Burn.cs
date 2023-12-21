@@ -46,13 +46,13 @@ public class Burn : MonoBehaviour
             
 
         }
-        if (burn == 3)
+        if (burn == 2)
         {
-            agent.speed = 4.5f;
+            agent.speed = 4.0f;
         }
         if (burn == 4)
         {
-            agent.speed = 6.0f;
+            agent.speed = 5.0f;
         }
         if (burn == 5)
         {
