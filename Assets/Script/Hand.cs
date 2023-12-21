@@ -18,19 +18,16 @@ public class Hand : MonoBehaviour
     /*public Material[] outline;
     Renderer rend;*/
 
-    //public AudioSource audioSource;
+    public AudioSource audioSource;
+    public AudioSource Drop;
 
 
     private void Start()
     {
-        //audioSource = GetComponent<AudioSource>();
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
-        /*rend = GetComponent<Renderer>();
-        rend.enabled = true;
-        rend.material = outline[0];*/
     }
 
     private void Update()
@@ -41,8 +38,6 @@ public class Hand : MonoBehaviour
         if(dist <= 1.7f)
         {
             hasPlayer = true;
-            //rend.material = outline[1];
-            Debug.Log("kkkkkk");
         }
         else
         {
@@ -54,8 +49,8 @@ public class Hand : MonoBehaviour
             GetComponent<Rigidbody>().isKinematic = true;
             transform.parent = playerCam;
             beingCarried = true;
-
-            //audioSource.Play();
+            
+            audioSource.Play();
         }
 
         if (beingCarried)
@@ -80,6 +75,7 @@ public class Hand : MonoBehaviour
                 GetComponent <Rigidbody>().isKinematic = false;
                 transform.parent = null;
                 beingCarried = false;
+                Drop.Play();
             }
         }
     }
