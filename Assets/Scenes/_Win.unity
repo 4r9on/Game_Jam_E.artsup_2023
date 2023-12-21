@@ -311,7 +311,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 155480170}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa0b3b8be10974c4cbc83f14df0a0b36, type: 3}
+  m_Script: {fileID: 11500000, guid: c68bbe6835d53e94e8c34f9c07139067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &230377517
@@ -1253,7 +1253,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainMenu
+          m_StringArgument: -MainMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2093643918

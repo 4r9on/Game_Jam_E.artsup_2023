@@ -25,7 +25,7 @@ public class Burn : MonoBehaviour
 
     AIController controller;
 
-    NavMeshAgent agent;
+    public NavMeshAgent agent;
 
     public AudioSource audioSource;
 
@@ -48,11 +48,11 @@ public class Burn : MonoBehaviour
         }
         if (burn == 3)
         {
-            agent.speed = 3.5f;
+            agent.speed = 4.5f;
         }
         if (burn == 4)
         {
-            agent.speed = 5.0f;
+            agent.speed = 6.0f;
         }
         if (burn == 5)
         {
