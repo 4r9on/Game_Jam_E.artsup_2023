@@ -58,7 +58,7 @@ public class AIController : MonoBehaviour
 
         if(waypointIndex == waypoints.Count)
         {
-            waypointIndex = 0;
+            waypointIndex = 1;
         }
     }
 
