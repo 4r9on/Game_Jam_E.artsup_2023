@@ -18,6 +18,8 @@ public class AIController : MonoBehaviour
     int waypointIndex;
     Vector3 target;
 
+    public AudioSource audioSource;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -69,9 +71,12 @@ public class AIController : MonoBehaviour
 
         if (distance < detecDistance)
         {
+            audioSource.Play();
+
             agent.SetDestination(agent.destination);
             agent.destination = Target.position;
         }
-         
+       
+
     }
 }
