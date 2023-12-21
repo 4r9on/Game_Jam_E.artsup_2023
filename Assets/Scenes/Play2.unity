@@ -26962,7 +26962,7 @@ PrefabInstance:
     - target: {fileID: 1561769417629769905, guid: 23380c106b65cae49add8a6fb0ebb505,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6936816
+      value: -0.69375074
       objectReference: {fileID: 0}
     - target: {fileID: 1561769417629769905, guid: 23380c106b65cae49add8a6fb0ebb505,
         type: 3}
@@ -26972,7 +26972,7 @@ PrefabInstance:
     - target: {fileID: 1561769417629769905, guid: 23380c106b65cae49add8a6fb0ebb505,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.7066298
+      value: -5.70663
       objectReference: {fileID: 0}
     - target: {fileID: 1732056829286772580, guid: 23380c106b65cae49add8a6fb0ebb505,
         type: 3}
@@ -27038,7 +27038,7 @@ PrefabInstance:
     - target: {fileID: 3394306771596801327, guid: 23380c106b65cae49add8a6fb0ebb505,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.7066298
+      value: -5.70663
       objectReference: {fileID: 0}
     - target: {fileID: 3394306771596801327, guid: 23380c106b65cae49add8a6fb0ebb505,
         type: 3}
@@ -27048,7 +27048,7 @@ PrefabInstance:
     - target: {fileID: 3394306771596801327, guid: 23380c106b65cae49add8a6fb0ebb505,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.6936816
+      value: -0.69375074
       objectReference: {fileID: 0}
     - target: {fileID: 3394306771596801327, guid: 23380c106b65cae49add8a6fb0ebb505,
         type: 3}
@@ -27110,6 +27110,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.123
+      objectReference: {fileID: 0}
+    - target: {fileID: 6798646703628520424, guid: 23380c106b65cae49add8a6fb0ebb505,
+        type: 3}
+      propertyPath: mNoiseOffsets.x
+      value: 435.2252
+      objectReference: {fileID: 0}
+    - target: {fileID: 6798646703628520424, guid: 23380c106b65cae49add8a6fb0ebb505,
+        type: 3}
+      propertyPath: mNoiseOffsets.y
+      value: 18.433899
+      objectReference: {fileID: 0}
+    - target: {fileID: 6798646703628520424, guid: 23380c106b65cae49add8a6fb0ebb505,
+        type: 3}
+      propertyPath: mNoiseOffsets.z
+      value: -352.625
       objectReference: {fileID: 0}
     - target: {fileID: 7270724975093973936, guid: 23380c106b65cae49add8a6fb0ebb505,
         type: 3}
@@ -38009,7 +38024,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: dcfa9c80284cd6d46869df1417ef22f5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39900,7 +39915,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1134453941
 Transform:
   m_ObjectHideFlags: 0
