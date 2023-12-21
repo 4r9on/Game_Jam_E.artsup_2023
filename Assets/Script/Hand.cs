@@ -18,9 +18,13 @@ public class Hand : MonoBehaviour
     /*public Material[] outline;
     Renderer rend;*/
 
+    //public AudioSource audioSource;
+
 
     private void Start()
     {
+        //audioSource = GetComponent<AudioSource>();
+
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
@@ -50,6 +54,8 @@ public class Hand : MonoBehaviour
             GetComponent<Rigidbody>().isKinematic = true;
             transform.parent = playerCam;
             beingCarried = true;
+
+            //audioSource.Play();
         }
 
         if (beingCarried)

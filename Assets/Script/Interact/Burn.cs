@@ -27,14 +27,24 @@ public class Burn : MonoBehaviour
 
     NavMeshAgent agent;
 
+    public AudioSource audioSource;
+
     //public GameObject hasObject;
     //public GameObject notObject;
+
+    private void Start()
+    {
+        
+    }
 
     private void Update()
     {
         if (burn == 1)
         {
+            audioSource.Play();
             monster.SetActive(true);
+            
+
         }
         if (burn == 3)
         {
