@@ -17,6 +17,7 @@ TagManager:
   - grass
   - wool
   - wood
+  - Chien
   layers:
   - Default
   - TransparentFX
