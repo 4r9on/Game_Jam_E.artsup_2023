@@ -6,6 +6,7 @@ public class Text : MonoBehaviour
 {
     public GameObject text1;
     public GameObject text2;
+    public GameObject col;
 
     // Start is called before the first frame update
     void Start()
@@ -33,5 +34,6 @@ public class Text : MonoBehaviour
         text2.SetActive(true);
         yield return new WaitForSecondsRealtime(5f);
         text2.SetActive(false);
+        col.SetActive(false);                
     }
 }

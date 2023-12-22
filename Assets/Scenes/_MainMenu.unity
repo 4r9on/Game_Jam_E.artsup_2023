@@ -2620,7 +2620,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mousse 0
+  m_text: Mouse 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 23c5664b5cbd3c540ab8398c451639e3, type: 2}
   m_sharedMaterial: {fileID: -3291010617259760530, guid: 23c5664b5cbd3c540ab8398c451639e3,
